@@ -1,0 +1,86 @@
+.navbar .nav > li > a {
+  text-shadow: none;
+  vertical-align: text-bottom;
+}
+
+.hero-unit {
+  .border-radius(0px);
+//  border-top: @white 2px dashed;
+//  border-bottom: @white 2px dashed;
+  #gradient > .vertical(@green, @lightGreen);
+  color: @white;
+  padding: 30px;
+  padding-bottom: 0px;
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 14px;
+  }
+  img {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .carousel-caption {
+    h4 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  .carousel-control {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+    height: 40px;
+    left: 15px;
+    line-height: 30px;
+    margin-top: -20px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 40px;
+  }
+  .carousel-control.right {
+    right: 15px;
+    left: auto;
+  }
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-inner {
+  border: none;
+  box-shadow: none;
+}
+.dropdown-menu {
+  font-size: 10px;
+}
+
+.navbar .pull-right .dropdown-menu, .navbar .dropdown-menu.pull-right {
+  left: 0;
+  right: auto;
+}
+
+.navbar .nav li.dropdown .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open .caret {
+  border-top-color: @grayDark;
+  border-bottom-color: @grayDark;
+}
+
+.navbar .dropdown-menu:before,
+.navbar .dropdown-menu:after {
+  display: none;
+}
