@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 group :test, :development do
   gem 'sqlite3'
+  gem 'rspec-rails', '>= 2.4.1'
 end
 
 group :production do
@@ -28,7 +29,11 @@ end
 
 gem 'jquery-rails'
 gem 'less-rails-bootstrap'
+gem 'execjs'
 gem 'nokogiri'
+#gem 'savon'
+#gem 'curb'
+#gem 'httparty', '0.6.1'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
