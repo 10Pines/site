@@ -19,7 +19,7 @@ module ApplicationHelper
 
     puts ExecJS.runtime.name
     context = ExecJS.compile(source)
-    result = context.call("zxcvbn", params[:pwd], :bare => true)
+    result = context.call("zxcvbn", 'pepe')
     result['score']
   end
 end
