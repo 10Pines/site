@@ -12,7 +12,6 @@ end
 
 group :production do
   gem "pg"
-  gem 'therubyracer', :platforms => :ruby
 end
 
 # Gems used only for assets and not required

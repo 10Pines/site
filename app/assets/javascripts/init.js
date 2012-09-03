@@ -83,13 +83,3 @@
     result.calc_time = time() - start;
     return result;
   };
-
-//  if (typeof window !== "undefined" && window !== null) {
-//    window.zxcvbn = zxcvbn;
-//    if (typeof window.zxcvbn_load_hook === "function") {
-//      window.zxcvbn_load_hook();
-//    }
-//  } else if (typeof exports !== "undefined" && exports !== null) {
-//    exports.zxcvbn = zxcvbn;
-//  }
-

@@ -17,9 +17,9 @@ module ApplicationHelper
     source << open("#{Rails.root}/app/assets/javascripts/matching.js").read
     source << open("#{Rails.root}/app/assets/javascripts/init.js").read
 
-    puts source
+    puts ExecJS.runtime.name
     context = ExecJS.compile(source)
-    result = context.call("zxcvbn", params[:password], :bare => true)
+    result = context.call("zxcvbn", params[:pwd], :bare => true)
     result['score']
   end
 end
