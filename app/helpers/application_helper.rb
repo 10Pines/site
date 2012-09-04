@@ -11,11 +11,12 @@ module ApplicationHelper
   end
 
   def password_strength
-    source = open("#{Rails.root}/app/assets/javascripts/frequency_lists.js").read
-    source << open("#{Rails.root}/app/assets/javascripts/adjacency_graphs.js").read
-    source << open("#{Rails.root}/app/assets/javascripts/scoring.js").read
-    source << open("#{Rails.root}/app/assets/javascripts/matching.js").read
-    source << open("#{Rails.root}/app/assets/javascripts/init.js").read
+    #source = open("#{Rails.root}/app/assets/javascripts/frequency_lists.js").read
+    #source << open("#{Rails.root}/app/assets/javascripts/adjacency_graphs.js").read
+    #source << open("#{Rails.root}/app/assets/javascripts/scoring.js").read
+    #source << open("#{Rails.root}/app/assets/javascripts/matching.js").read
+    #source << open("#{Rails.root}/app/assets/javascripts/init.js").read
+    source = File.open("#{Rails.root}/config/zxcvbn.js").read
 
     puts ExecJS.runtime.name
     context = ExecJS.compile(source)
