@@ -10,6 +10,7 @@ db/*.sqlite3
 log/*.log
 config/database.yml
 public/system/*
+public/assets/*
 tmp
 .sass-cache
 
